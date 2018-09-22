@@ -60,3 +60,35 @@ git commit -m "Mensagem"
 # O argumento utilizado no comando git commit (-m) serve para você adicionar um comentário na versão que foi salva
 # É bastante comum se adicionar nos comentários o que foi modificado na versão, assim facilita para que outros usuários saibam 
 #o que foi feito na versão.
+
+## VISUALIZANDO O HISTÓRICO DOS COMMITES
+
+# Para visualizar as modofocações que foram feitas nas versões utilizamos o (git log)
+git log
+
+# Este comando tem várias funcionalidades podendo resumir os dados a serem observados
+
+git log --decorate
+# o git log -- decorate mostra de onde veio o arquivo
+
+git log --author "nome do autor"
+# filtra os commites pelos autores das versões
+
+git shortlog
+# mostra uma lista em ordem alfabética com todos os autores, número de commites e quais foram eles
+
+git shortlog -sn
+# Mostra apenas a quantidade de commites e os autores
+
+git log --graph
+# mostra em uma forma gráfica o que está ocorrendo com as modificações dos arquivos
+
+# Visualizando as modificações dos commites através da rash. Para isso é necessário copiar a rash referente ao commite a ser observado
+#e inserir no comando git show
+git show rash do commite
+
+## OBSERVANDO AS MODIFICAÇÕES ANTES DE CRIAR UM COMMITE
+
+# Vizualizando as Modificações antes de salvar as versões
+git diff
+
