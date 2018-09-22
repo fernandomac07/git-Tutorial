@@ -42,3 +42,21 @@ vim arquivo.md
 # untracked = quando você cria o arquivo mas o git ainda não o reconhece
 # modified = quando você modifica o arquivo
 # unstage = quando o arquivo está na sua fase final, pronto para ser comitado (criar uma verção)
+
+# Identificando o status do arquivo
+git status
+
+# quando você não tem nada de informação o git status aparecerá untracked
+# para mudar o status do arquivo é preciso adicionar o arquivo no diretório do git
+git add nome do arquivo.md
+
+# após executar este comando o status mudará para unstage, ou seja está pronto para ser comitado
+# caso você resolva modificar o arquivo, o status dele irá para modified, então será necessário adiciona-lo
+# novamente para que o status retorne para unstage e assim ser comitado (salvo)
+
+# Comitando arquivo (salvando uma versão)
+git commit -m "Mensagem"
+
+# O argumento utilizado no comando git commit (-m) serve para você adicionar um comentário na versão que foi salva
+# É bastante comum se adicionar nos comentários o que foi modificado na versão, assim facilita para que outros usuários saibam 
+#o que foi feito na versão.
